@@ -1,4 +1,4 @@
-"""Question answering over a graph."""
+﻿"""Question answering over a graph."""
 
 from __future__ import annotations
 

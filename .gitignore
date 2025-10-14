@@ -3,3 +3,6 @@ chroma_data/
 notebooks/
 eda/
 todo.md
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf

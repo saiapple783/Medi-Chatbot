@@ -1,4 +1,4 @@
-import dotenv
+﻿import dotenv
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings

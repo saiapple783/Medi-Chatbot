@@ -1,4 +1,4 @@
-# flake8: noqa
+﻿# flake8: noqa
 from langchain_core.prompts.prompt import PromptTemplate
 
 CYPHER_GENERATION_WITH_EXAMPLES_TEMPLATE = """Task:Generate Cypher statement to query a graph database.

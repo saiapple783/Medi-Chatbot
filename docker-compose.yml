@@ -1,11 +1,11 @@
-version: '3'
-
 services:
   hospital_neo4j_etl:
     build:
       context: ./hospital_neo4j_etl
     env_file:
       - .env
+    platform: linux/amd64
+    entrypoint: ["/bin/sh", "/app/entrypoint.sh"]
 
   chatbot_api:
     build:
@@ -16,8 +16,12 @@ services:
       - hospital_neo4j_etl
     ports:
       - "8000:8000"
+    platform: linux/amd64
+    entrypoint: ["/bin/sh", "/app/src/entrypoint.sh"] 
 
   chatbot_frontend:
+    environment:
+    - CHATBOT_URL=http://chatbot_api:8000/hospital-rag-agent
     build:
       context: ./chatbot_frontend
     env_file:
@@ -26,7 +30,9 @@ services:
       - chatbot_api
     ports:
       - "8501:8501"
-
+    platform: linux/amd64
+    entrypoint: ["/bin/sh", "/app/entrypoint.sh"]
+    
   cypher_example_portal:
     build:
       context: ./cypher_example_portal
@@ -36,3 +42,5 @@ services:
       - hospital_neo4j_etl
     ports:
       - "8502:8502"
+    platform: linux/amd64
+    entrypoint: ["/bin/sh", "/app/entrypoint.sh"]
