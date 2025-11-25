@@ -20,9 +20,9 @@ services:
     platform: linux/amd64
     entrypoint: ["/bin/sh", "/app/src/entrypoint.sh"] 
     environment:
-      - NEO4J_URI=neo4j+s://40a9a5d7.databases.neo4j.io
-      - NEO4J_USERNAME=neo4j
-      - NEO4J_PASSWORD=NXIh-C_yKlskYMDtftRv8E-1SM46dhc8ssCKCyNosY8
+      - NEO4J_URI=
+      - NEO4J_USERNAME=
+      - NEO4J_PASSWORD=
   chatbot_frontend:
     environment:
     - CHATBOT_URL=http://chatbot_api:8000/hospital-rag-agent
