@@ -63,13 +63,6 @@ After each container finishes building, you'll be able to access the chatbot api
 
 ![Demo](./langchain_rag_chatbot_demo.gif)
 
-## Supporting Articles
-
-You can read the following articles for more detailed information on this project:
-
-- [Build an LLM RAG Chatbot With LangChain](https://realpython.com/build-llm-rag-chatbot-with-langchain/#demo-a-llm-rag-chatbot-with-langchain-and-neo4j)
-- [A Simple Strategy to Improve LLM Query Generation](https://towardsdatascience.com/a-simple-strategy-to-improve-llm-query-generation-3178a7426c6f)
-
 ## Future Additions
 
 The plan for this project is to iteratively improve the Hospital System Chatbot over time as new libraries, techniques, and models emerge in the RAG and Generative AI space. Here are a few features currently in the backlog:
@@ -83,3 +76,24 @@ The plan for this project is to iteratively improve the Hospital System Chatbot 
 - **Terraform to provision cloud resources**
 - **Chatbot performance evaluation and experiment tracking**
 - **API authentication**
+
+Recent Additions
+
+2.	Custom Agent Tool Integration:
+
+○	Wrap the scraper as a LangChain tool.
+
+○	Register it with the hospital RAG agent.
+
+○	The agent decides when to invoke the tool dynamically based on user queries (e.g., “Find hospitals in Irving, TX”).
+
+This design allows the bot to combine database knowledge with real-time web data.
+________________________________________
+✅ 4. Key Outcomes
+●	All Docker build and runtime issues were successfully resolved.
+
+●	The environment is now fully containerized and reproducible.
+
+●	The chatbot backend, frontend, and ETL pipelines are running in harmony.
+
+●	A roadmap for adding real-time hospital search capability has been defined and is ready for implementation.
