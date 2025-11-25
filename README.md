@@ -77,7 +77,7 @@ The plan for this project is to iteratively improve the Hospital System Chatbot 
 - **Chatbot performance evaluation and experiment tracking**
 - **API authentication**
 
-##**Recent Additions**
+**Recent Additions**
 
 Custom Agent Tool Integration:
 
@@ -89,11 +89,12 @@ Custom Agent Tool Integration:
 
 This design allows the bot to combine database knowledge with real-time web data.
 ________________________________________
-##**Key Outcomes**
-●	All Docker build and runtime issues were successfully resolved.
+**Key Outcomes**
 
-●	The environment is now fully containerized and reproducible.
+- **All Docker build and runtime issues were successfully resolved.**
 
-●	The chatbot backend, frontend, and ETL pipelines are running in harmony.
+- **The environment is now fully containerized and reproducible.**
 
-●	Added real-time hospital search capability.
+- **The chatbot backend, frontend, and ETL pipelines are running in harmony.**
+
+- **Added real-time hospital search capability.**
