@@ -1,5 +1,6 @@
 chroma_data/
 *.env
+rag_api/.env
 notebooks/
 eda/
 todo.md
