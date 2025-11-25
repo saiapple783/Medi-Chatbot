@@ -77,23 +77,23 @@ The plan for this project is to iteratively improve the Hospital System Chatbot 
 - **Chatbot performance evaluation and experiment tracking**
 - **API authentication**
 
-Recent Additions
+##**Recent Additions**
 
-2.	Custom Agent Tool Integration:
+Custom Agent Tool Integration:
 
-○	Wrap the scraper as a LangChain tool.
+->	Wrap the scraper as a LangChain tool.
 
-○	Register it with the hospital RAG agent.
+-> Register it with the hospital RAG agent.
 
-○	The agent decides when to invoke the tool dynamically based on user queries (e.g., “Find hospitals in Irving, TX”).
+-> The agent decides when to invoke the tool dynamically based on user queries (e.g., “Find hospitals in Irving, TX”).
 
 This design allows the bot to combine database knowledge with real-time web data.
 ________________________________________
-✅ 4. Key Outcomes
+##**Key Outcomes**
 ●	All Docker build and runtime issues were successfully resolved.
 
 ●	The environment is now fully containerized and reproducible.
 
 ●	The chatbot backend, frontend, and ETL pipelines are running in harmony.
 
-●	A roadmap for adding real-time hospital search capability has been defined and is ready for implementation.
+●	Added real-time hospital search capability.
